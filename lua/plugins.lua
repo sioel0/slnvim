@@ -81,6 +81,17 @@ return require('packer').startup(function()
     requires = { { 'kyazdani42/nvim-web-devicons', opt=true } }
   })
 
+  -- coding utilities
+  use('ap/vim-css-color')
+  use({
+    'lukas-reineke/indent-blankline.nvim',
+    config = function() require('indent_blankline').setup() end
+  })
+  use({
+    'lewis6991/gitsigns.nvim',
+    config = function() require('gitsigns').setup() end
+  })
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
