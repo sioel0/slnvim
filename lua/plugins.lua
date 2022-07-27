@@ -55,11 +55,19 @@ return require('packer').startup(function()
   -- statrup screen
   use({
     'goolord/alpha-nvim',
-    requires = { 'kyazdani43/nvim-web-devicons' },
     config = function()
       require('config.alpha').setup()
     end,
   })
+
+  -- cmp plugin
+  use('hrsh7th/nvim-cmp')
+  use('hrsh7th/cmp-buffer')
+  use('hrsh7th/cmp-path')
+
+  -- luasnip for snippets
+  use('L3MON4D3/LuaSnip')
+  use('saadparwaiz1/cmp_luasnip')
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
