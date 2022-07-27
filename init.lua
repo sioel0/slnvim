@@ -1,3 +1,4 @@
+require('config.autopairs')        -- autopirs setup
 require('config.colorscheme')      -- setup nvim colorscheme
 require('config.cmp')              -- setup cmp for completions
 require('config.gitsigns')         -- gitsigns setup

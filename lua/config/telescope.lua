@@ -15,7 +15,7 @@ if not cmp_status_ok then
 end
 
 local actions = require('telescope.actions')
-tel.setup {
+tel.setup({
   defaults = {
     mappings = {
       i = {
@@ -25,4 +25,4 @@ tel.setup {
       },
     },
   }
-}
+})

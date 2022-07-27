@@ -91,6 +91,7 @@ return require('packer').startup(function()
     'lewis6991/gitsigns.nvim',
     config = function() require('gitsigns').setup() end
   })
+  use('windwp/nvim-autopairs')
 
   -- treesitter
   use({

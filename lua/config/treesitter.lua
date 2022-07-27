@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-configs.setup {
+configs.setup({
   ensure_installed = {"bash", "c", "cpp", "java", "python", "latex", "markdown", "yaml", "lua"},
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { "" }, -- List of parsers to ignore installing
@@ -26,4 +26,4 @@ configs.setup {
     extended_mode = true,
     max_file_lines = nil,
   }),
-}
+})

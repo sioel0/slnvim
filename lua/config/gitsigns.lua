@@ -3,7 +3,7 @@ if not status_ok then
     return
 end
 
-gs.setup {
+gs.setup({
   signs = {
     add          = {hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
     change       = {hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
@@ -42,4 +42,4 @@ gs.setup {
   yadm = {
     enable = false
   },
-}
+})
