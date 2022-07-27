@@ -69,7 +69,7 @@ return require('packer').startup(function()
   use('L3MON4D3/LuaSnip')
   use('saadparwaiz1/cmp_luasnip')
 
-  -- telescope setup
+  -- telescope
   use({
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -90,6 +90,12 @@ return require('packer').startup(function()
   use({
     'lewis6991/gitsigns.nvim',
     config = function() require('gitsigns').setup() end
+  })
+
+  -- treesitter
+  use({
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   })
 
   if PACKER_BOOTSTRAP then
