@@ -129,6 +129,14 @@ return require('packer').startup(function()
     config = function() require('better_escape').setup() end
   })
 
+  -- zen mode to have a distraction free env
+  use('Pocco81/true-zen.nvim')
+
+  -- latex support using vimtex
+  use({
+    'lervag/vimtex'
+  })
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

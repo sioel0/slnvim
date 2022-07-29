@@ -13,6 +13,8 @@ require('config.lsp')              -- lsp setup
 require('config.lualine')          -- statusline setup
 require('config.telescope')        -- telescope plugin
 require('config.treesitter')       -- treesitter plugin
+require('config.vimtex')
+require('config.zenmode')          -- zen mode to have a distraction free env
 require('defaults')                -- default options
 require('plugins')                 -- plugin confgiuration using packer
 
