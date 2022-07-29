@@ -26,14 +26,14 @@ keymap("n", "<C-l>", ":vertical +2<CR>", opts)
 
 -- disable arrow keys
 keymap("n", "<Left>", "<Nop>", opts)
-keymap("n", "<Rnght>", "<Nop>", opts)
+keymap("n", "<Right>", "<Nop>", opts)
 keymap("n", "<Up>", "<Nop>", opts)
 keymap("n", "<Down>", "<Nop>", opts)
 
 -- 
 -- INSERT MODE
 --
-keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
 -- disable esc and arrow keys
 keymap("i", "<Esc>", "<Nop>", opts)
 keymap("i", "<Left>", "<Nop>", opts)
@@ -44,7 +44,6 @@ keymap("i", "<Down>", "<Nop>", opts)
 -- 
 -- VISUAL MODE
 --
-keymap("v", "<Esc>", "<Nop>", opts)
 keymap("v", "jk", "<ESC>", opts)
 
 -- don't exit visual while reindenting

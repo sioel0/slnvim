@@ -119,6 +119,12 @@ return require('packer').startup(function()
   -- make faster startup
   use('lewis6991/impatient.nvim')
 
+  -- faster escape using jk
+  use({
+    'max397574/better-escape.nvim',
+    config = function() require('better_escape').setup() end
+  })
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

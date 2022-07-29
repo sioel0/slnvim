@@ -2,6 +2,7 @@
 require('impatient')
 
 require('config.autopairs')        -- autopirs setup
+require('config.better_escape')
 require('config.colorscheme')      -- setup nvim colorscheme
 require('config.comment')          -- comment tool
 require('config.cmp')              -- setup cmp for completions
