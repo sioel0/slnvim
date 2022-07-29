@@ -140,8 +140,8 @@ return require('packer').startup(function()
   -- neorg plugin an org mode clone for neovim
   use({
     'nvim-neorg/neorg',
+    config = function() require('neorg').setup() end,
     requires = 'nvim-lua/plenary.nvim',
-    ft = 'norg'
   })
 
   if PACKER_BOOTSTRAP then

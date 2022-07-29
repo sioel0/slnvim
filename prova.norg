@@ -1,0 +1,33 @@
+* Prima Slide
+
+  Sono proprio curioso di capire come funziona
+
+  @code cpp
+
+  #include <iostream>
+
+  int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+  }
+
+  @end
+
+  Semplice hello, world scritto in C++, sembra codice semplice ma in realtá
+  rappresenta una complessitá immensa al suo interno per tutto il codice che
+  effettivamente viene utilizzato per poter effettuare questa banalissima 
+  operazione.
+** Voglio vedere come lo renderizza
+
+   Ci sta un botto, ora modifico il dim del code block.
+
+* Seconda Slide
+  In questo caso il codice scritto sará in Java.
+
+  @code java
+  public class Hello {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+    }
+  }
+  @end
