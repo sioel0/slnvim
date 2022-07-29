@@ -5,7 +5,7 @@ require('config.cmp')              -- setup cmp for completions
 require('config.gitsigns')         -- gitsigns setup
 require('config.indent_blankline') -- setup indent_blankline plugin
 require('config.key')              -- shortcuts configuration
--- require('config.lsp')              -- lsp setup
+require('config.lsp')              -- lsp setup
 require('config.lualine')          -- statusline setup
 require('config.telescope')        -- telescope plugin
 require('config.treesitter')       -- treesitter plugin
