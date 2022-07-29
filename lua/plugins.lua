@@ -137,6 +137,13 @@ return require('packer').startup(function()
     'lervag/vimtex'
   })
 
+  -- neorg plugin an org mode clone for neovim
+  use({
+    'nvim-neorg/neorg',
+    requires = 'nvim-lua/plenary.nvim',
+    ft = 'norg'
+  })
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
