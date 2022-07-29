@@ -1,3 +1,6 @@
+-- make faster startup
+require('impatient')
+
 require('config.autopairs')        -- autopirs setup
 require('config.colorscheme')      -- setup nvim colorscheme
 require('config.comment')          -- comment tool

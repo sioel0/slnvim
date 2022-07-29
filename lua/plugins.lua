@@ -109,6 +109,9 @@ return require('packer').startup(function()
   use('neovim/nvim-lspconfig')
   use('williamboman/nvim-lsp-installer')
 
+  -- make faster startup
+  use('lewis6991/impatient.nvim')
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
