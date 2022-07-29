@@ -92,6 +92,11 @@ return require('packer').startup(function()
     config = function() require('gitsigns').setup() end
   })
   use('windwp/nvim-autopairs')
+  use({
+    'numToStr/Comment.nvim',
+    config = function() require('Comment').setup() end
+  })
+  use('JoosepAlviste/nvim-ts-context-commentstring')
 
   -- treesitter
   use({
