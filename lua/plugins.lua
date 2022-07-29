@@ -98,6 +98,10 @@ return require('packer').startup(function()
     config = function() require('Comment').setup() end
   })
   use('JoosepAlviste/nvim-ts-context-commentstring')
+  use({
+    'kylechui/nvim-surround',
+    config = function() require('nvim-surround').setup() end
+  })
 
   -- treesitter
   use({
