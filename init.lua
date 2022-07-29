@@ -2,7 +2,7 @@
 require('impatient')
 
 require('config.autopairs')        -- autopirs setup
-require('config.better_escape')
+require('config.better_escape')    -- better way to escape insert mode
 require('config.colorscheme')      -- setup nvim colorscheme
 require('config.comment')          -- comment tool
 require('config.cmp')              -- setup cmp for completions
@@ -18,3 +18,5 @@ require('plugins')                 -- plugin confgiuration using packer
 
 -- start lualine
 require('lualine').setup()
+
+
