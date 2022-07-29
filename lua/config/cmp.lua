@@ -17,6 +17,8 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
   sources = cmp.config.sources({
+    { name = 'nvim_lsp'}
+  }, {
     { name = 'luasnip' },
   }, {
     { name = 'buffer' },
@@ -28,7 +30,7 @@ cmp.setup({
     format = function(entry, vim_item)
       -- Kind icons
       vim_item.menu = ({
-        -- nvim_lsp = "[LSP]",
+        nvim_lsp = "[LSP]",
         luasnip = "[Snip]",
         buffer = "[Buf]",
         path = "[Path]",
