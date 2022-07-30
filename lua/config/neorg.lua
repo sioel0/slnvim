@@ -35,3 +35,11 @@ neorg.setup{
     }
   }
 }
+
+local opts = { noremap = true, silent = true }
+
+-- shorten keymap function name
+local keymap = vim.api.nvim_set_keymap
+
+keymap("n", "<leader>ps", "<cmd>Neorg presenter start<CR>", opts)
+keymap("n", "<leader>pc", "<cmd>Neorg presenter close<CR>", opts)
