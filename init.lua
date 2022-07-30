@@ -2,6 +2,7 @@
 require('impatient')
 
 require('config.autopairs')        -- autopirs setup
+require('config.barbar')
 require('config.better_escape')    -- better way to escape insert mode
 require('config.colorscheme')      -- setup nvim colorscheme
 require('config.comment')          -- comment tool

@@ -44,6 +44,7 @@ return require('packer').startup(function()
 
   -- useful plugins used as depencies
   use('nvim-lua/plenary.nvim')
+  use('kyazdani42/nvim-web-devicons')
 
   -- colorscheme plugins
   use('folke/tokyonight.nvim')
@@ -80,6 +81,12 @@ return require('packer').startup(function()
   use({
     'nvim-lualine/lualine.nvim',
     requires = { { 'kyazdani42/nvim-web-devicons', opt=true } }
+  })
+
+  -- barline
+  use({
+    'romgrk/barbar.nvim',
+    requires = { {'kyazdani42/nvim-web-devicons', opt=true }}
   })
 
   -- coding utilities
