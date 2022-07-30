@@ -109,10 +109,6 @@ return require('packer').startup(function()
   })
   use('JoosepAlviste/nvim-ts-context-commentstring')
   use({
-    'kylechui/nvim-surround',
-    config = function() require('nvim-surround').setup() end
-  })
-  use({
     'nacro90/numb.nvim',
     config = function() require('numb').setup() end
   })
