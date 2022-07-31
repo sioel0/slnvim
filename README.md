@@ -1,4 +1,4 @@
-# slnvim
+# SLNVIM
 
 <p align="center">
   <a>
