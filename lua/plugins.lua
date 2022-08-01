@@ -140,6 +140,9 @@ return require('packer').startup(function()
     'lervag/vimtex'
   })
 
+  -- markdown preview plugin
+  use({'ellisonleao/glow.nvim'})
+
   -- neorg plugin an org mode clone for neovim
   use({
     'nvim-neorg/neorg',
