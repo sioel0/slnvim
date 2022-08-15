@@ -1,3 +1,4 @@
+require('plugins')                 -- plugin confgiuration using packer
 -- make faster startup
 require('impatient')
 
@@ -18,7 +19,6 @@ require('config.treesitter')       -- treesitter plugin
 require('config.vimtex')
 require('config.zenmode')          -- zen mode to have a distraction free env
 require('defaults')                -- default options
-require('plugins')                 -- plugin confgiuration using packer
 
 -- start lualine
 require('lualine').setup()
