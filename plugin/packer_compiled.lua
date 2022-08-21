@@ -70,7 +70,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
-    config = { "\27LJ\2\0025\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
@@ -81,7 +81,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["alpha-nvim"] = {
-    config = { "\27LJ\2\2:\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17config.alpha\frequire\0" },
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17config.alpha\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
@@ -92,7 +92,7 @@ _G.packer_plugins = {
     url = "https://github.com/romgrk/barbar.nvim"
   },
   ["better-escape.nvim"] = {
-    config = { "\27LJ\2\2;\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18better_escape\frequire\0" },
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18better_escape\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/better-escape.nvim",
     url = "https://github.com/max397574/better-escape.nvim"
@@ -118,7 +118,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
@@ -139,7 +139,7 @@ _G.packer_plugins = {
     url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["indent-blankline.nvim"] = {
-    config = { "\27LJ\2\2>\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\21indent_blankline\frequire\0" },
+    config = { "\27LJ\2\n>\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\21indent_blankline\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
@@ -150,7 +150,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   neorg = {
-    config = { "\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nneorg\frequire\0" },
+    config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nneorg\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/neorg",
     url = "https://github.com/nvim-neorg/neorg"
@@ -161,7 +161,7 @@ _G.packer_plugins = {
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["numb.nvim"] = {
-    config = { "\27LJ\2\0022\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tnumb\frequire\0" },
+    config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tnumb\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/numb.nvim",
     url = "https://github.com/nacro90/numb.nvim"
@@ -177,7 +177,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-colorizer.lua"] = {
-    config = { "\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0" },
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0" },
     loaded = true,
     path = "/home/sioel0/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
@@ -250,38 +250,38 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: numb.nvim
-time([[Config for numb.nvim]], true)
-try_loadstring("\27LJ\2\0022\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tnumb\frequire\0", "config", "numb.nvim")
-time([[Config for numb.nvim]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
+time([[Config for indent-blankline.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\0025\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
--- Config for: nvim-colorizer.lua
-time([[Config for nvim-colorizer.lua]], true)
-try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0", "config", "nvim-colorizer.lua")
-time([[Config for nvim-colorizer.lua]], false)
 -- Config for: neorg
 time([[Config for neorg]], true)
-try_loadstring("\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nneorg\frequire\0", "config", "neorg")
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nneorg\frequire\0", "config", "neorg")
 time([[Config for neorg]], false)
--- Config for: indent-blankline.nvim
-time([[Config for indent-blankline.nvim]], true)
-try_loadstring("\27LJ\2\2>\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
-time([[Config for indent-blankline.nvim]], false)
 -- Config for: better-escape.nvim
 time([[Config for better-escape.nvim]], true)
-try_loadstring("\27LJ\2\2;\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18better_escape\frequire\0", "config", "better-escape.nvim")
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18better_escape\frequire\0", "config", "better-escape.nvim")
 time([[Config for better-escape.nvim]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17config.alpha\frequire\0", "config", "alpha-nvim")
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17config.alpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
+-- Config for: numb.nvim
+time([[Config for numb.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tnumb\frequire\0", "config", "numb.nvim")
+time([[Config for numb.nvim]], false)
+-- Config for: nvim-colorizer.lua
+time([[Config for nvim-colorizer.lua]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0", "config", "nvim-colorizer.lua")
+time([[Config for nvim-colorizer.lua]], false)
 if should_profile then save_profiles() end
 
 end)
