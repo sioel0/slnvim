@@ -5,7 +5,7 @@ end
 
 local lspconfig = require("lspconfig")
 
-local servers = { "asm_lsp", "bashls", "clangd", "pyright", "sumneko_lua", "texlab"}
+local servers = { "asm_lsp", "bashls", "clangd", "pyright", "rust_analyzer", "sumneko_lua", "texlab"}
 
 lsp_installer.setup({
 	ensure_installed = servers,

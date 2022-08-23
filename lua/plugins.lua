@@ -52,6 +52,7 @@ return require('packer').startup(function()
   use('ellisonleao/gruvbox.nvim')
   use('bluz71/vim-nightfly-guicolors')
   use('bluz71/vim-moonfly-colors')
+  use('NLKNguyen/papercolor-theme')
 
   -- statrup screen
   use({
@@ -122,9 +123,6 @@ return require('packer').startup(function()
   -- lsp
   use('neovim/nvim-lspconfig')
   use('williamboman/nvim-lsp-installer')
-
-  -- make faster startup
-  use('lewis6991/impatient.nvim')
 
   -- faster escape using jk
   use({
