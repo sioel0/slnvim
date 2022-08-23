@@ -1,6 +1,5 @@
 require('plugins')                 -- plugin confgiuration using packer
--- make faster startup
-require('impatient')
+require('defaults')                -- default options
 
 require('config.autopairs')        -- autopirs setup
 require('config.barbar')
@@ -18,7 +17,6 @@ require('config.telescope')        -- telescope plugin
 require('config.treesitter')       -- treesitter plugin
 require('config.vimtex')
 require('config.zenmode')          -- zen mode to have a distraction free env
-require('defaults')                -- default options
 
 -- start lualine
 require('lualine').setup()
