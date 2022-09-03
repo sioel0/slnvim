@@ -131,7 +131,7 @@ return require('packer').startup(function()
   })
 
   -- zen mode to have a distraction free env
-  use('Pocco81/true-zen.nvim')
+  use('folke/zen-mode.nvim')
 
   -- latex support using vimtex
   use({
