@@ -30,6 +30,8 @@ keymap("n", "<Right>", "<Nop>", opts)
 keymap("n", "<Up>", "<Nop>", opts)
 keymap("n", "<Down>", "<Nop>", opts)
 
+-- paste but keep in yank buffer
+keymap("x", "<Leader>p", "\"_dP", opts)
 -- 
 -- INSERT MODE
 --
