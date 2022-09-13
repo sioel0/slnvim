@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup({
-  ensure_installed = {"bash", "c", "cpp", "java", "norg", "python", "latex", "markdown", "yaml", "lua"},
+  ensure_installed = {"bash", "c", "cpp", "java", "norg", "python", "markdown", "yaml", "lua"},
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { "" }, -- List of parsers to ignore installing
   auto_install = true,
