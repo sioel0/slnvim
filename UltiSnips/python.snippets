@@ -1,0 +1,32 @@
+snippet main "Main function" A
+if __name__ == "__main__":
+	$0
+endsnippet
+
+snippet fun "Function definition" Ab
+def ${1:function}(${2:arguments}):
+	$0
+endsnippet
+
+snippet fo "open file"
+try:
+	f = open(${1:filename})
+	$0
+catch:
+	f.close()
+endsnippet
+
+snippet if "If blocks" Ab
+if ${1:condition}:
+	$0
+endsnippet
+
+snippet while "While block" Ab
+while ${1:condition}:
+	$0
+endsnippet
+
+snippet for "For block" Ab
+for ${1:condition}:
+	$0
+endsnippet

@@ -53,6 +53,7 @@ return require('packer').startup(function()
   use('bluz71/vim-nightfly-guicolors')
   use('bluz71/vim-moonfly-colors')
   use('NLKNguyen/papercolor-theme')
+  use('arcticicestudio/nord-vim')
 
   -- statrup screen
   use({
@@ -68,10 +69,9 @@ return require('packer').startup(function()
   use('hrsh7th/cmp-path')
   use('hrsh7th/cmp-nvim-lsp')
 
-  -- luasnip for snippets
-  use('L3MON4D3/LuaSnip')
-  use('saadparwaiz1/cmp_luasnip')
-
+  -- ultisnips for snippets management
+  use('SirVer/ultisnips')
+  
   -- telescope
   use({
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -136,16 +136,6 @@ return require('packer').startup(function()
   -- latex support using vimtex
   use({
     'lervag/vimtex'
-  })
-
-  -- markdown preview plugin
-  use({'ellisonleao/glow.nvim'})
-
-  -- neorg plugin an org mode clone for neovim
-  use({
-    'nvim-neorg/neorg',
-    config = function() require('neorg').setup() end,
-    requires = 'nvim-lua/plenary.nvim',
   })
 
   if PACKER_BOOTSTRAP then
