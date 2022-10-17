@@ -61,6 +61,12 @@ return require('packer').startup(function()
   use('NLKNguyen/papercolor-theme')
   use('arcticicestudio/nord-vim')
 
+  -- coding utilies
+  use({
+    'norcalli/nvim-colorizer.lua',
+    config = function() require('colorizer').setup() end
+  })
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
