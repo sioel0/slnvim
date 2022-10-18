@@ -1,0 +1,7 @@
+require('plugin_setup.barbar')
+require('plugin_setup.comment')
+require('plugin_setup.gitsigns')
+require('plugin_setup.indent_blankline')
+require('plugin_setup.lualine')
+require('plugin_setup.telescope')
+require('plugin_setup.treesitter')

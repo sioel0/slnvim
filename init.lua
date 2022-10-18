@@ -1,4 +1,4 @@
 require('plugins')
 require('mappings')
--- require('plugins_setup')
+require('plugin_setup')
 require('settings')

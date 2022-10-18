@@ -46,6 +46,32 @@ return require('packer').startup(function()
   use('nvim-lua/plenary.nvim')
   use('kyazdani42/nvim-web-devicons')
 
+  -- startup screen
+  use({
+    'goolord/alpha-nvim',
+    config = function()
+      require('plugin_setup.alpha').setup()
+    end,
+  })
+
+  -- telescope
+  use({
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  })
+
+  -- lualine
+  use({
+    'nvim-lualine/lualine.nvim',
+    requires = { {'kyazdani42/nvim-web-devicons', opt=true } }
+  })
+
+  -- barline
+  use({
+    'romgrk/barbar.nvim',
+    requires = { {'kyazdani42/nvim-web-devicons', opt=true } }
+  })
+
   -- better escape to exit normal mode using "jk"
   use({
     'max397574/better-escape.nvim',
@@ -65,6 +91,30 @@ return require('packer').startup(function()
   use({
     'norcalli/nvim-colorizer.lua',
     config = function() require('colorizer').setup() end
+  })
+  use({
+    'lukas-reineke/indent-blankline.nvim',
+    config = function() require('indent_blankline').setup() end
+  })
+  use({
+    'lewis6991/gitsigns.nvim',
+    config = function() require('gitsigns').setup() end
+  })
+  use({
+    'numToStr/Comment.nvim',
+    config = function() require('Comment').setup() end
+  })
+  use('JoosepAlviste/nvim-ts-context-commentstring')
+  use({
+    'nacro90/numb.nvim',
+    config = function() require('numb').setup() end
+  })
+  use('windwp/nvim-autopairs')
+
+  -- treesitter
+  use({
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update{ { with_sync = true } } end,
   })
 
   if PACKER_BOOTSTRAP then
