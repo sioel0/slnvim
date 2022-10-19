@@ -110,6 +110,10 @@ return require('packer').startup(function()
     config = function() require('numb').setup() end
   })
   use('windwp/nvim-autopairs')
+  use({
+    'stevearc/aerial.nvim',
+    config = function() require('aerial').setup() end
+  })
 
   -- completion plugin
   use('hrsh7th/nvim-cmp')
@@ -128,6 +132,9 @@ return require('packer').startup(function()
     run = function() require('nvim-treesitter.install').update{ { with_sync = true } } end,
   })
 
+  -- better marks support
+  use('chentoast/marks.nvim')
+  
   -- lsp
   use('neovim/nvim-lspconfig')
   use('williamboman/mason.nvim')
