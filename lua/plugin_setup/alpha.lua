@@ -34,6 +34,7 @@ function M.setup()
   dashboard.section.buttons.val = {
     dashboard.button("<Space> n", "  New file", ":ene <BAR> startinsert <CR>"),
     dashboard.button("<Space> f", "  Find File", ":Telescope find_files <CR>"),
+    dashboard.button("<Space> p", "  Open project", ":Telescope projects <CR>"),
     dashboard.button("<Space> q", "  Quit Neovim", ":qa<CR>"),
   }
 

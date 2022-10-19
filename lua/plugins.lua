@@ -78,6 +78,9 @@ return require('packer').startup(function()
     config = function() require('better_escape').setup() end
   })
 
+  -- smart split to manage split windows
+  use('mrjones2014/smart-splits.nvim')
+
   -- install some colorschemes
   use('folke/tokyonight.nvim')
   use('EdenEast/nightfox.nvim')
@@ -115,6 +118,12 @@ return require('packer').startup(function()
     config = function() require('aerial').setup() end
   })
 
+  -- git management
+  use({
+    'TimUntersberger/neogit',
+    config = function () require('neogit').setup() end
+  })
+
   -- completion plugin
   use('hrsh7th/nvim-cmp')
   use('hrsh7th/cmp-nvim-lsp')
@@ -125,7 +134,7 @@ return require('packer').startup(function()
   -- snippet plugin
   use('L3MON4D3/LuaSnip')
   use('rafamadriz/friendly-snippets')
-  
+
   -- treesitter
   use({
     'nvim-treesitter/nvim-treesitter',
@@ -134,11 +143,27 @@ return require('packer').startup(function()
 
   -- better marks support
   use('chentoast/marks.nvim')
-  
+
   -- lsp
   use('neovim/nvim-lspconfig')
+  use('ray-x/lsp_signature.nvim')
   use('williamboman/mason.nvim')
   use('williamboman/mason-lspconfig.nvim')
+
+  -- nvim tree
+  use({
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    },
+    config = function() require('nvim-tree').setup() end
+  })
+
+  -- project management
+  use({
+    'ahmedkhalf/project.nvim',
+    config = function() require('project_nvim').setup() end
+  })
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

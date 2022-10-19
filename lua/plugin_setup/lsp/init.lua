@@ -29,3 +29,4 @@ local kopts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 keymap("n", "<leader>m", ":Mason<CR>", kopts)
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", kopts)
