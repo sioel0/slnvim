@@ -111,11 +111,27 @@ return require('packer').startup(function()
   })
   use('windwp/nvim-autopairs')
 
+  -- completion plugin
+  use('hrsh7th/nvim-cmp')
+  use('hrsh7th/cmp-nvim-lsp')
+  use('hrsh7th/cmp-buffer')
+  use('hrsh7th/cmp-path')
+  use('saadparwaiz1/cmp_luasnip')
+
+  -- snippet plugin
+  use('L3MON4D3/LuaSnip')
+  use('rafamadriz/friendly-snippets')
+  
   -- treesitter
   use({
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update{ { with_sync = true } } end,
   })
+
+  -- lsp
+  use('neovim/nvim-lspconfig')
+  use('williamboman/mason.nvim')
+  use('williamboman/mason-lspconfig.nvim')
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
