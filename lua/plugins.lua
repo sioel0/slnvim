@@ -72,6 +72,9 @@ return require('packer').startup(function()
     requires = { {'kyazdani42/nvim-web-devicons', opt=true } }
   })
 
+  -- beutify UI elements
+  use('stevearc/dressing.nvim')
+
   -- better escape to exit normal mode using "jk"
   use({
     'max397574/better-escape.nvim',
@@ -116,12 +119,6 @@ return require('packer').startup(function()
   use({
     'stevearc/aerial.nvim',
     config = function() require('aerial').setup() end
-  })
-
-  -- git management
-  use({
-    'TimUntersberger/neogit',
-    config = function () require('neogit').setup() end
   })
 
   -- completion plugin

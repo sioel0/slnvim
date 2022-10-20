@@ -21,6 +21,7 @@ for _, server in pairs(servers) do
   end
   lspconfig[server].setup(opts)
 end
+require('plugin_setup.lsp.signature')
 
 -- add keymap to start mason
 local kopts = { noremap = true, silent = true }
