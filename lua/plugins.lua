@@ -162,15 +162,6 @@ return require('packer').startup(function()
     config = function() require('project_nvim').setup() end
   })
 
-  -- icon picker
-  use({
-    'ziontee113/icon-picker.nvim',
-    config = function() require('icon-picker').setup({
-      disable_legacy_commanfs = true
-    })
-    end,
-  })
-
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
