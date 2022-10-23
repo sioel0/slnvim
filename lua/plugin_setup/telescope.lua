@@ -21,8 +21,11 @@ tel.setup({
     mappings = {
       i = {
         ["jk"] = actions.close,
+        ["<Esc>"] = actions.close,
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
+        ["<S-Tab>"] = actions.move_selection_next,
+        ["<Tab>"] = actions.move_selection_previous,
       },
     },
   }

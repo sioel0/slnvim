@@ -127,6 +127,7 @@ return require('packer').startup(function()
   use('hrsh7th/cmp-buffer')
   use('hrsh7th/cmp-path')
   use('saadparwaiz1/cmp_luasnip')
+  use('onsails/lspkind.nvim')
 
   -- snippet plugin
   use('L3MON4D3/LuaSnip')

@@ -1,4 +1,5 @@
 local cmp = require('cmp')
+local lspkind = require('lspkind')
 
 cmp.setup({
   snippet = {
@@ -16,29 +17,28 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
   sources = cmp.config.sources({
-    { name = 'luasnip' },
     { name = 'nvim_lsp' },
+    { name = 'luasnip' },
     { name = 'buffer' },
     { name = 'path' },
   }),
   formatting = ({
     fields = {  "menu", "abbr", "kind" },
-    format = function(entry, vim_item)
-      -- Kind icons
-      vim_item.menu = ({
-        nvim_lsp = "",
-        buffer = "",
-        path = "",
-        luasnip = "",
-      })[entry.source.name]
-      vim_item.kind = ({
-        nvim_lsp = "[LSP]",
-        buffer = "[Buf]",
-        path = "[File]",
-        luasnip = "[Snip]",
-      })[entry.source.name]
-      return vim_item
-    end,
+    format = lspkind.cmp_format({
+      mode = 'symbol_text',
+      maxwidth = 50,
+      ellipsis_char = '...',
+      before = function(entry, vim_item)
+        -- Kind icons
+        vim_item.menu = ({
+          nvim_lsp = "",
+          buffer = "",
+          path = "",
+          luasnip = "",
+        })[entry.source.name]
+        return vim_item
+      end,
+    }),
   }),
   confirm_opts = ({
     behavior = cmp.ConfirmBehavior.Replace,
