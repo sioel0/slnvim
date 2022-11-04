@@ -14,13 +14,11 @@ function M.setup()
       [[                                                     ]],
       [[                                                     ]],
       [[                                                     ]],
-      [[                                                     ]],
       [[  ███████ ██      ███    ██ ██    ██ ██ ███    ███   ]],
       [[  ██      ██      ████   ██ ██    ██ ██ ████  ████   ]],
       [[  ███████ ██      ██ ██  ██ ██    ██ ██ ██ ████ ██   ]],
       [[       ██ ██      ██  ██ ██  ██  ██  ██ ██  ██  ██   ]],
       [[  ███████ ███████ ██   ████   ████   ██ ██      ██   ]],
-      [[                                                     ]],
       [[                                                     ]],
       [[                                                     ]],
       [[                                                     ]],
@@ -40,7 +38,7 @@ function M.setup()
 
   local function footer()
     -- Number of plugins
-    local datetime = os.date "%d-%m-%Y  %H:%M:%S"
+    local datetime = os.date "%d-%m-%Y --- %H:%M:%S"
 
     -- Quote
     local fortune = require "alpha.fortune"
